@@ -21,6 +21,12 @@ footer {
     color: rgb(183, 182, 182);
 }
 
+#links-social-network img {
+    width: 17px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
 #footer-second-section {
     padding: 10px;
 }
