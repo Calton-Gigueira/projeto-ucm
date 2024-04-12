@@ -68,6 +68,25 @@ footer {
     margin-top: -5px;
 }
 
+#link-github {
+    margin: auto;
+    text-align: center;
+    background-color: #000;
+    margin-top: 5px;
+    padding: 10px;
+    font-style: italic;
+}
+
+#link-github p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#link-github p a:hover {
+    text-decoration: underline;
+    color: blueviolet;
+}
+
 @media screen and (min-width: 801px) {
     #greater-section {
         display: grid;
