@@ -3,13 +3,13 @@
 header {
     background-color: #2d3d7d;
     color: #fff;
-    height: 10vh;
+    height: 20vh;
     align-content: center;
     padding: 10px;
     font-size: 20px;
 }
 
-#sect1{
+#sect1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,36 +26,35 @@ header a {
     font-size: 10px;
 }
 
-@media screen and (min-width: 510px) and (max-width: 765px) {
-    header {
-        font-size: 1.2em;
-    }
-
-    #sect1 {
-        margin: auto;
-        width: 80vw;
-    }
-
-    h1 {
-        margin-bottom: -10px;
-    }
+span {
+    cursor: pointer;
 }
 
-@media screen and (min-width: 766px) {
+.menu {
+    display: none;
+    margin-left: 22px;
+}
+
+@media screen and (min-width: 865px) {
     header {
-        font-size: 30px;
+        height: 10vh;
+        font-size: 25px;
     }
-
-    #sect1 {
+    
+    #flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80vw;
         margin: auto;
-        width: 70vw;
     }
 
-    h1 {
-        margin-bottom: -20px;
+    .menu {
+        display: block;
     }
 
-    #sect1 a {
-        font-size: 12px;
+    #sect1 a,
+    .menu a {
+        font-size: 13px;
     }
 }

@@ -8,22 +8,24 @@
 
 nav {
     background-color: rgb(56, 54, 54);
-    font-size: 10px;
-    height: 90px;
+    color: #fff;
     padding: 10px;
 }
 
+nav #section {
+    margin-left: 22px;
+}
+
 #navsect {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: none;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
     display: block;
-    margin: 5px;
+    font-size: 12px;
+    margin-top: 3px;
 }
 
 #section-p p {
@@ -35,8 +37,9 @@ nav a {
     width: 15px;
 }
 
-@media screen and (min-width: 510px) and (max-width: 800px) {
-    #navsect {
+@media screen and (min-width: 510px) and (max-width: 864px) {
+
+    #section {
         margin: auto;
         width: 80vw;
     }
@@ -46,25 +49,29 @@ nav a {
     }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1000px) {
-    nav {
-        height: 3vh;
+@media screen and (min-width: 865px) {
+    span {
+        display: none;
     }
 
     #navsect {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: center;
         margin: auto;
-        width: 95vw;
+        width: 79.5vw;
     }
 
-    nav a {
-        display: inline-block;
-        font-size: 13px;
+    #navsect section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navsect section a {
+        padding: 5px;
     }
 }
-
+/*
 @media screen and (min-width: 1001px) {
     nav {
         height: 5vh;
@@ -84,4 +91,26 @@ nav a {
         display: inline-block;
         font-size: 14px;
     }
-}
+}*/
+
+/*
+    nav {
+        background-color: rgb(56, 54, 54);
+        font-size: 10px;
+        height: 90px;
+        padding: 10px;
+    }
+
+    #navsect {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        margin: 5px;
+    }
+*/
