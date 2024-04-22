@@ -66,6 +66,13 @@ input[type=submit] {
     cursor: pointer;
 }
 
+input[type=submit]:hover {
+    background-color: #fff;
+    color: #2d3d7d;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+}
+
 @media screen and (min-width: 1005px) {
     main {
         width: 75vw;
