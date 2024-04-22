@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+main {
+    border: 1px solid #949292;
+    width: 90vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#validation,
+#form {
+    padding: 20px;
+}
+
+#validation {
+    background-color: #2d3d7d;
+    color: white;
+}
+
+#validation h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#validation p {
+    font-size: 12px;
+}
+
+#bar {
+    background-color: rgb(56, 54, 54);
+    height: 20px;
+}
+
+#form h3 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+#form hr {
+    margin-bottom: 8px;
+}
+
+#form p {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+#form form {
+    display: grid;
+}
+
+input {
+    margin: 0px 0px 5px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #949292;
+} 
+
+input[type=submit] {
+    background-color: #2d3d7d;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 865px) {
+    main {
+        width: 75vw;
+        margin-bottom: 200px;
+    }
+
+    #validation {
+        height: 65px;
+    }
+
+    #validation h2 {
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    #validation p {
+        margin-top: 15px;
+    }
+
+    #bar {
+        height: 30px;
+    }
+
+    #form h3,
+    #form hr,
+    #form p {
+        margin-bottom: 15px;
+    }
+
+    #form form {
+        display: grid;
+        grid-template-columns: 1fr 120px 120px 120px 120px;
+        column-gap: 20px;
+    }
+
+}

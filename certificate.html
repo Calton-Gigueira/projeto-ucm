@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/certificate.css">
 </head>
 <body>
     <header>
@@ -42,6 +43,26 @@
             </section>
         </section>
     </nav>
+
+    <main>
+        <section id="validation">
+            <h2>Validação do <strong>Certificado</strong></h2>
+            <p>Inicio / <strong>Certificado</strong></p>
+        </section>
+        <section id="bar"></section>
+        <section id="form"> 
+            <h3>Certificado</h3>
+            <hr>
+            <p>Para validar o certificado inserir o código de estudante e a data de nascimento.</p>
+            <form action="post">
+                <input type="number" name="form" id="codigo" placeholder="Código de estudante">
+                <input type="number" name="form" id="dia" placeholder="Dia">
+                <input type="number" name="form" id="mes" placeholder="Mês">
+                <input type="number" name="form" id="ano" placeholder="Ano">
+                <input type="submit" value="Verificar">
+            </form>
+        </section>
+    </main>
 
     <footer>
         <section id="greater-section">
