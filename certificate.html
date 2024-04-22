@@ -54,11 +54,15 @@
             <h3>Certificado</h3>
             <hr>
             <p>Para validar o certificado inserir o código de estudante e a data de nascimento.</p>
-            <form action="post">
-                <input type="number" name="form" id="codigo" placeholder="Código de estudante">
-                <input type="number" name="form" id="dia" placeholder="Dia">
-                <input type="number" name="form" id="mes" placeholder="Mês">
-                <input type="number" name="form" id="ano" placeholder="Ano">
+            <form action="#" method="post" autocomplete="on">
+                <input type="number" name="form" id="codigo" placeholder="Código de estudante" required>
+
+                <input type="number" name="form" id="dia" placeholder="Dia" required>
+
+                <input type="number" name="form" id="mes" placeholder="Mês" required>
+
+                <input type="number" name="form" id="ano" placeholder="Ano" required>
+
                 <input type="submit" value="Verificar">
             </form>
         </section>
