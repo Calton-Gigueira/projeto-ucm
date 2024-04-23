@@ -73,6 +73,19 @@ input[type=submit]:hover {
     transition: all 0.3s ease;
 }
 
+#last-p {
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1004px) {
+    #form form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+}
+
 @media screen and (min-width: 1005px) {
     main {
         width: 75vw;
