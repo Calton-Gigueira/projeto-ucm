@@ -5,6 +5,7 @@ const navsec = document.querySelector('#navsect');
 
 function controlMenu(button, menu) {
     button.addEventListener('click', (event) => {
+        event.preventDefault();
 
         if (menu.style.display == "block") {
             menu.style.display = "none";
@@ -12,7 +13,6 @@ function controlMenu(button, menu) {
             menu.style.display = "block";
         }
 
-        event.preventDefault();
     });
 }
 
@@ -22,11 +22,12 @@ controlMenu(menuButton2, navsec);
 const body = document.getElementsByTagName('body')[0];
 
 body.addEventListener('resize', (event) => {
+    event.preventDefault();
+    
     if (window.innerWidth >= 865) {
         navsec.style = 'display: flex; flex-direction: row; justify-content: space-between;';
     } else {
         navsec.style.display = 'none';
     }
 
-    event.preventDefault();
 });
