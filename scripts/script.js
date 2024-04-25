@@ -13,6 +13,8 @@ function controlMenu(button, menu) {
             menu.style.display = "block";
         }
 
+        console.log('clicked')
+
     });
 }
 
